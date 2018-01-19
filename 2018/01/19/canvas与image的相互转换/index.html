@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="你好你是谁？markdown语法">
+<meta name="description" content="canvas和image的相互转换踩坑路最近在学习canvas对图片进行处理，图片处理后，保存新图片到本地，记录下几个关键点。1.image转canvas 对于image转canvas，是相对容易的，canvas有提供相应的方法，将图片绘制到canvas，实现image转换为canvas。ctx.drawImage(          image, //规定要使用的图像、画布或视频。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="canvas与image的相互转换">
 <meta property="og:url" content="http://yoursite.com/2018/01/19/canvas与image的相互转换/index.html">
 <meta property="og:site_name" content="RodeRick&#39;s personal blog">
-<meta property="og:description" content="你好你是谁？markdown语法">
+<meta property="og:description" content="canvas和image的相互转换踩坑路最近在学习canvas对图片进行处理，图片处理后，保存新图片到本地，记录下几个关键点。1.image转canvas 对于image转canvas，是相对容易的，canvas有提供相应的方法，将图片绘制到canvas，实现image转换为canvas。ctx.drawImage(          image, //规定要使用的图像、画布或视频。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-19T06:14:35.737Z">
+<meta property="og:updated_time" content="2018-01-19T06:32:39.145Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="canvas与image的相互转换">
-<meta name="twitter:description" content="你好你是谁？markdown语法">
+<meta name="twitter:description" content="canvas和image的相互转换踩坑路最近在学习canvas对图片进行处理，图片处理后，保存新图片到本地，记录下几个关键点。1.image转canvas 对于image转canvas，是相对容易的，canvas有提供相应的方法，将图片绘制到canvas，实现image转换为canvas。ctx.drawImage(          image, //规定要使用的图像、画布或视频。">
 
 
 
@@ -369,7 +369,18 @@
       
 
       
-        <h1 id="你好"><a href="#你好" class="headerlink" title="你好"></a>你好</h1><h2 id="你是谁？"><a href="#你是谁？" class="headerlink" title="你是谁？"></a>你是谁？</h2><h3 id="markdown语法"><a href="#markdown语法" class="headerlink" title="markdown语法"></a>markdown语法</h3>
+        <h3 id="canvas和image的相互转换踩坑路"><a href="#canvas和image的相互转换踩坑路" class="headerlink" title="canvas和image的相互转换踩坑路"></a>canvas和image的相互转换踩坑路</h3><h5 id="最近在学习canvas对图片进行处理，图片处理后，保存新图片到本地，记录下几个关键点。"><a href="#最近在学习canvas对图片进行处理，图片处理后，保存新图片到本地，记录下几个关键点。" class="headerlink" title="最近在学习canvas对图片进行处理，图片处理后，保存新图片到本地，记录下几个关键点。"></a>最近在学习canvas对图片进行处理，图片处理后，保存新图片到本地，记录下几个关键点。</h5><p>1.image转canvas</p>
+<h6 id="对于image转canvas，是相对容易的，canvas有提供相应的方法，将图片绘制到canvas，实现image转换为canvas。"><a href="#对于image转canvas，是相对容易的，canvas有提供相应的方法，将图片绘制到canvas，实现image转换为canvas。" class="headerlink" title="对于image转canvas，是相对容易的，canvas有提供相应的方法，将图片绘制到canvas，实现image转换为canvas。"></a>对于image转canvas，是相对容易的，canvas有提供相应的方法，将图片绘制到canvas，实现image转换为canvas。</h6><p><code>ctx.drawImage(
+         image, //规定要使用的图像、画布或视频。
+         imageX, //开始剪切的 x 坐标位置。
+         imageY, //开始剪切的 Y 坐标位置。
+         image.width,
+         image.height, //被剪切图像的高度。
+         0, 0,//在画布上放置图像的 x 、y坐标位置。
+         canvas.width*imageScale,
+         canvas.height*imageScale  //要使用的图像的宽度、高度
+     );</code></p>
+
       
     </div>
     
@@ -538,7 +549,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#你好"><span class="nav-number">1.</span> <span class="nav-text">你好</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#你是谁？"><span class="nav-number">1.1.</span> <span class="nav-text">你是谁？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#markdown语法"><span class="nav-number">1.1.1.</span> <span class="nav-text">markdown语法</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#canvas和image的相互转换踩坑路"><span class="nav-number">1.</span> <span class="nav-text">canvas和image的相互转换踩坑路</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#最近在学习canvas对图片进行处理，图片处理后，保存新图片到本地，记录下几个关键点。"><span class="nav-number">1.0.1.</span> <span class="nav-text">最近在学习canvas对图片进行处理，图片处理后，保存新图片到本地，记录下几个关键点。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#对于image转canvas，是相对容易的，canvas有提供相应的方法，将图片绘制到canvas，实现image转换为canvas。"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">对于image转canvas，是相对容易的，canvas有提供相应的方法，将图片绘制到canvas，实现image转换为canvas。</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>

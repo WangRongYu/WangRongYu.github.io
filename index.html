@@ -370,7 +370,18 @@
       
         
           
-            <h1 id="你好"><a href="#你好" class="headerlink" title="你好"></a>你好</h1><h2 id="你是谁？"><a href="#你是谁？" class="headerlink" title="你是谁？"></a>你是谁？</h2><h3 id="markdown语法"><a href="#markdown语法" class="headerlink" title="markdown语法"></a>markdown语法</h3>
+            <h3 id="canvas和image的相互转换踩坑路"><a href="#canvas和image的相互转换踩坑路" class="headerlink" title="canvas和image的相互转换踩坑路"></a>canvas和image的相互转换踩坑路</h3><h5 id="最近在学习canvas对图片进行处理，图片处理后，保存新图片到本地，记录下几个关键点。"><a href="#最近在学习canvas对图片进行处理，图片处理后，保存新图片到本地，记录下几个关键点。" class="headerlink" title="最近在学习canvas对图片进行处理，图片处理后，保存新图片到本地，记录下几个关键点。"></a>最近在学习canvas对图片进行处理，图片处理后，保存新图片到本地，记录下几个关键点。</h5><p>1.image转canvas</p>
+<h6 id="对于image转canvas，是相对容易的，canvas有提供相应的方法，将图片绘制到canvas，实现image转换为canvas。"><a href="#对于image转canvas，是相对容易的，canvas有提供相应的方法，将图片绘制到canvas，实现image转换为canvas。" class="headerlink" title="对于image转canvas，是相对容易的，canvas有提供相应的方法，将图片绘制到canvas，实现image转换为canvas。"></a>对于image转canvas，是相对容易的，canvas有提供相应的方法，将图片绘制到canvas，实现image转换为canvas。</h6><p><code>ctx.drawImage(
+         image, //规定要使用的图像、画布或视频。
+         imageX, //开始剪切的 x 坐标位置。
+         imageY, //开始剪切的 Y 坐标位置。
+         image.width,
+         image.height, //被剪切图像的高度。
+         0, 0,//在画布上放置图像的 x 、y坐标位置。
+         canvas.width*imageScale,
+         canvas.height*imageScale  //要使用的图像的宽度、高度
+     );</code></p>
+
           
         
       
